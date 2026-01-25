@@ -1,0 +1,18 @@
+name: APP_NAME_PLACEHOLDER
+options:
+  bundleIdPrefix: com.portfolio.vibe
+  createIntermediateGroups: true
+targets:
+  APP_NAME_PLACEHOLDER:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: APP_NAME_PLACEHOLDER
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        SWIFT_VERSION: 5.0
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: "This app requires microphone access to function."
+    dependencies: []

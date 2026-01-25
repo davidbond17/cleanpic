@@ -23,5 +23,7 @@ struct MetadataCard: View {
             RoundedRectangle(cornerRadius: AppTheme.cardCornerRadius)
                 .stroke(Color.theme.border, lineWidth: 1)
         )
+        .accessibilityElement(children: .combine)
+        .accessibilityLabel("\(metadata.displayName): \(metadata.value)")
     }
 }

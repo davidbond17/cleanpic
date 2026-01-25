@@ -39,6 +39,8 @@ struct PurgeButton: View {
         }
         .disabled(isProcessing)
         .animation(.easeInOut(duration: AppTheme.animationDuration), value: isProcessing)
+        .accessibilityLabel(isProcessing ? "Purging metadata" : "Purge metadata from image")
+        .accessibilityHint("Removes all metadata and saves a clean copy to your photo library")
     }
 }
 
