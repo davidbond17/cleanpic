@@ -12,8 +12,6 @@ targets:
     deploymentTarget: "17.0"
     sources:
       - path: ExifPurge
-    resources:
-      - Assets.xcassets
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.portfolio.vibe.ExifPurge
