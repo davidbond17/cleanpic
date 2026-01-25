@@ -4,8 +4,7 @@ import SwiftUI
 struct ExifPurgeApp: App {
     var body: some Scene {
         WindowGroup {
-            EmptyStateView()
-                .preferredColorScheme(.dark)
+            MainView()
         }
     }
 }

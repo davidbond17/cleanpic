@@ -22,7 +22,7 @@ class ImageProcessorViewModel: ObservableObject {
         metadata = []
         processingResult = nil
 
-        guard let data = await item.loadImageData() else {
+        guard let data = try? await item.loadTransferable(type: Data.self) else {
             isProcessing = false
             return
         }
