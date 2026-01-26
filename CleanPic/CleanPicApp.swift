@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct ExifPurgeApp: App {
+struct CleanPicApp: App {
     var body: some Scene {
         WindowGroup {
             MainView()

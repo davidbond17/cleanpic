@@ -11,7 +11,7 @@ struct EmptyStateView: View {
                     .foregroundColor(Color.theme.accentBlue)
 
                 VStack(spacing: AppTheme.elementSpacing) {
-                    Text("ExifPurge")
+                    Text("CleanPic")
                         .font(.theme.title)
                         .foregroundColor(Color.theme.textPrimary)
 

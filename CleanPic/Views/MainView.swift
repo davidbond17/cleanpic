@@ -42,7 +42,7 @@ struct MainView: View {
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(Color.theme.accentBlue)
 
-                        Text("ExifPurge")
+                        Text("CleanPic")
                             .font(.system(size: 18, weight: .bold, design: .default))
                             .foregroundColor(.white)
                     }

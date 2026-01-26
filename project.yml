@@ -1,4 +1,4 @@
-name: ExifPurge
+name: CleanPic
 options:
   bundleIdPrefix: com.portfolio.vibe
   createIntermediateGroups: true
@@ -6,15 +6,15 @@ options:
     iOS: "17.0"
 
 targets:
-  ExifPurge:
+  CleanPic:
     type: application
     platform: iOS
     deploymentTarget: "17.0"
     sources:
-      - path: ExifPurge
+      - path: CleanPic
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.portfolio.vibe.ExifPurge
+        PRODUCT_BUNDLE_IDENTIFIER: com.portfolio.vibe.CleanPic
         MARKETING_VERSION: "1.0.0"
         CURRENT_PROJECT_VERSION: 1
         SWIFT_VERSION: "5.9"
@@ -28,5 +28,5 @@ targets:
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
         INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait"
         INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
-        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: "ExifPurge needs access to save cleaned photos to your library."
-        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "ExifPurge needs access to read photo metadata for removal."
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: "CleanPic needs access to save cleaned photos to your library."
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: "CleanPic needs access to read photo metadata for removal."
