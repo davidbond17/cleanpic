@@ -127,7 +127,7 @@ struct EmptyStateContent: View {
                 }
 
                 VStack(spacing: 12) {
-                    Text("ExifPurge")
+                    Text("CleanPic")
                         .font(.system(size: 36, weight: .bold, design: .default))
                         .foregroundColor(.white)
 
