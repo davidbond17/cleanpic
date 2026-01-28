@@ -1,0 +1,112 @@
+PROMOTIONAL TEXT (170 characters max)
+==========================================
+Remove hidden metadata from your photos with one tap. Completely free and open source. Your privacy matters.
+
+
+DESCRIPTION (4000 characters max)
+==========================================
+Take control of your photo privacy with CleanPic, the completely free and open-source app that removes hidden metadata from your images before you share them.
+
+WHY CLEANPIC?
+
+Every photo you take contains hidden information called EXIF metadata. This can include your exact GPS location, device model, camera settings, software versions, and timestamps. When you share photos online, you're unknowingly sharing this private information with the world.
+
+CleanPic puts you back in control. Inspect what's hidden in your photos, then remove it all with a single tap.
+
+KEY FEATURES
+
+• Inspect Metadata - View all hidden data embedded in your photos, organized by category (Location, Device, Camera, Date & Time, Software)
+
+• Batch Processing - Clean multiple photos at once with intelligent progress tracking
+
+• One-Tap Removal - Remove all metadata with a single tap, no technical knowledge required
+
+• Smart Deletion - Option to delete original photos after cleaning, keeping only the privacy-safe versions
+
+• Beautiful Interface - Modern, intuitive design that makes privacy protection effortless
+
+• Completely Offline - All processing happens on your device. Your photos never leave your phone.
+
+COMPLETELY FREE & OPEN SOURCE
+
+CleanPic is 100% free with no ads, no subscriptions, and no in-app purchases. Ever.
+
+The entire source code is available on GitHub at github.com/davidbond17/cleanpic for full transparency. You can see exactly what the app does with your photos - nothing hidden, nothing suspicious.
+
+PRIVACY CATEGORIES DETECTED
+
+Location Data:
+- GPS coordinates (latitude/longitude)
+- Altitude
+- Location names
+
+Device Information:
+- Phone model
+- Operating system version
+- Device identifiers
+
+Camera Settings:
+- Lens information
+- Aperture & shutter speed
+- ISO, focal length
+- Flash settings
+
+Date & Time:
+- Original capture time
+- Modification dates
+- Time zones
+
+Software Details:
+- Photo editing apps used
+- Software versions
+- Processing history
+
+HOW IT WORKS
+
+1. Select one or multiple photos from your library
+2. View all hidden metadata organized by category
+3. Tap the Purge button to remove all metadata
+4. Choose to keep or delete the originals
+
+Your cleaned photos are saved back to your library with all metadata removed, while preserving the original image quality.
+
+YOUR PRIVACY MATTERS
+
+CleanPic was built with privacy as the core principle:
+- No internet connection required
+- No data collection or analytics
+- No user accounts or cloud storage
+- No third-party SDKs or trackers
+- Open source for complete transparency
+
+Perfect for anyone who:
+- Shares photos on social media
+- Sells items online with product photos
+- Values their privacy and location security
+- Wants control over their personal data
+
+SUPPORT OPEN SOURCE
+
+CleanPic is a solo developer project built to help people protect their privacy. If you find it useful, please consider leaving a review or contributing to the project on GitHub.
+
+Have questions or suggestions? Find me on GitHub or submit an issue to the repository.
+
+
+KEYWORDS (100 characters max)
+==========================================
+exif,metadata,privacy,photo,location,gps,remove,cleaner,batch,security,open source,free
+
+
+COPYRIGHT
+==========================================
+© 2026 David Bond
+
+
+SUPPORT URL
+==========================================
+https://github.com/davidbond17/cleanpic
+
+
+PRIVACY POLICY URL
+==========================================
+https://github.com/davidbond17/cleanpic#privacy-policy

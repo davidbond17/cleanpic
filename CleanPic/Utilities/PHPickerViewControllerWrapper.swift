@@ -60,17 +60,23 @@ struct PHPickerViewControllerWrapper: UIViewControllerRepresentable {
                 group.enter()
 
                 let assetIdentifier = result.assetIdentifier
-                var phAsset: PHAsset?
+                let phAsset: PHAsset?
 
                 if let identifier = assetIdentifier {
                     let fetchResult = PHAsset.fetchAssets(withLocalIdentifiers: [identifier], options: nil)
                     phAsset = fetchResult.firstObject
                     print("📸 Loading photo \(index + 1): asset ID = \(identifier)")
+                    if phAsset != nil {
+                        print("✅ Found PHAsset for photo \(index + 1)")
+                    } else {
+                        print("⚠️ PHAsset not found for identifier: \(identifier)")
+                    }
                 } else {
+                    phAsset = nil
                     print("⚠️ Photo \(index + 1): No asset identifier")
                 }
 
-                result.itemProvider.loadDataRepresentation(forTypeIdentifier: UTType.image.identifier) { data, error in
+                result.itemProvider.loadDataRepresentation(forTypeIdentifier: UTType.image.identifier) { [phAsset] data, error in
                     if let error = error {
                         print("❌ Error loading data \(index + 1): \(error.localizedDescription)")
                         group.leave()
