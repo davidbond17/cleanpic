@@ -7,6 +7,11 @@ class PhotoLibraryService {
         return status == .authorized || status == .limited
     }
 
+    func hasFullAccess() -> Bool {
+        let status = PHPhotoLibrary.authorizationStatus(for: .readWrite)
+        return status == .authorized
+    }
+
     func saveImage(_ imageData: Data) async throws {
         try await PHPhotoLibrary.shared().performChanges {
             let creationRequest = PHAssetCreationRequest.forAsset()
@@ -15,6 +20,10 @@ class PhotoLibraryService {
     }
 
     func deleteAsset(_ asset: PHAsset) async throws {
+        guard hasFullAccess() else {
+            throw PhotoLibraryError.insufficientPermissions
+        }
+
         print("🗑️ Deleting asset: \(asset.localIdentifier)")
 
         try await PHPhotoLibrary.shared().performChanges {
@@ -25,6 +34,10 @@ class PhotoLibraryService {
     }
 
     func deleteAssets(_ assets: [PHAsset]) async throws {
+        guard hasFullAccess() else {
+            throw PhotoLibraryError.insufficientPermissions
+        }
+
         print("🗑️ Deleting \(assets.count) assets")
 
         try await PHPhotoLibrary.shared().performChanges {
@@ -32,5 +45,16 @@ class PhotoLibraryService {
         }
 
         print("✅ \(assets.count) assets deleted successfully")
+    }
+}
+
+enum PhotoLibraryError: LocalizedError {
+    case insufficientPermissions
+
+    var errorDescription: String? {
+        switch self {
+        case .insufficientPermissions:
+            return "Full photo library access is required to delete photos. Please go to Settings > CleanPic > Photos and select \"Full Access\"."
+        }
     }
 }
